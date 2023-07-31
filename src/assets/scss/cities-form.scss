@@ -1,0 +1,62 @@
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  
+  &__title {
+	grid-column: 1/3;
+	margin-bottom: 5px;
+  }
+  
+  &__field {
+	position: relative;
+  }
+  
+  &__input {
+	border: 1px solid #5e5e5e;
+	height: 30px;
+	width: 100%;
+	padding: 5px;
+	
+	&:focus {
+	  border-color: #90c4ec;
+	  box-shadow: inset 0 0 0 2px #90c4ec;
+	}
+  }
+  
+  &__cities-pool {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	border: 1px solid #5e5e5e;
+	border-top: none;
+	background-color: white;
+	text-decoration: none;
+	list-style-type: none;
+	
+	li {
+	  height: 30px;
+	  padding: 5px;
+	  cursor: pointer;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  
+	  &:not(:last-child) {
+		border-bottom: 1px solid #5e5e5e;
+	  }
+	  
+	  &:hover {
+		background-color: lightgray;
+	  }
+	}
+  }
+  
+  &__btn {
+	height: 30px;
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	font-size: 20px;
+  }
+}

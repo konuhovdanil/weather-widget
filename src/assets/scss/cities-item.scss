@@ -1,0 +1,36 @@
+.settings-cities-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item {
+  
+  &__title {
+	display: flex;
+	flex-direction: row;
+	white-space: nowrap;
+	overflow: hidden;
+	
+	span {
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	}
+  }
+  
+  &__drag {
+	margin-right: 10px;
+	cursor: pointer;
+  }
+  
+  &__btn {
+	border: none;
+	background: none;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+}

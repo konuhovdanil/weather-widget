@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Golos Text', sans-serif;
+  color: #5e5e5e;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.head {
+  font-weight: bold;
+}
+
+.app {
+  background-color: white;
+  min-width: 300px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+  min-height: 350px;
+  height: auto;
+  border: 1px solid #5e5e5e;
+  
+  &__settings-btn {
+	position: absolute;
+	top: 20px;
+	transform: translateY(-50%);
+	right: 10px;
+  }
+  
+  .gear {
+	font-size: 18px;
+  }
+  
+  .cross {
+	font-size: 28px;
+  }
+}
